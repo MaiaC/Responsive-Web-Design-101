@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>My Responsive Webpage</title>	
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div id="header">
+	<div id="nav-container">
+		<img src="https://images-na.ssl-images-amazon.com/images/I/41WgHCSDodL.jpg" alt="Puppy Love" id="logo">
+	    <div class="nav-ul">
+        	<a href="#">Features</a>
+			<a href="#">Pricing</a>
+        	<a href="#">Free Trial</a>
+        	<a href="#">Login</a>
+        </div>
+        <img src="menu-icon.png" alt="menu icon" onclick="responsiveMenu()" id="menu-icon">
+	</div>
+</div>
+
+<div id="parallax-header">
+	<div id="parallax-text">
+		<h1>PuppyLove</h1>
+		<p>All you need to discover the love of all the puppies in the world!</p>
+		<p>Bios, breeds, and fuzzy stories, whatever PuppyLove needs you seek, we've got it here!!</p>
+	</div>
+</div>
+
+<div id="row-container">
+	<p>PuppyLove can hook you up with over a hundred different breeds to increase the love in your life</p>
+	<div id="img-row">
+		<img src="beagle.png" alt="beagle">
+		<img src="pomeranian.png" alt="pomeranian">
+		<img src="labrador.png" alt="labrador">
+		<img src="yorkshire-terrier.png" alt="yorkshire terrier">
+		<img src="rottweiler.png" alt="rottweiler">
+	</div>
+</div>
+
+<hr>
+
+<div class="feature-block">
+	<div class="feature-text">
+		<h2>Ralphie</h2>
+		<p>Ralphie likes long walks on the beach and frollicking in the grass.</p>
+	</div>
+	<img src="beagle-square.jpg" alt="beagle">
+</div>
+
+<hr>
+
+<div class="feature-block" id="reverse">
+	<div class="feature-text">
+		<h2>Fluff and Fuzz</h2>
+		<p>These twin balls of fun are ready to give their soft furry love.</p>
+	</div>
+	<img src="pomeranian-square.jpg" alt="pomeranian">
+</div>
+
+<hr>
+
+<div class="feature-block">
+	<div class="feature-text">
+		<h2>Alfonso</h2>
+		<p>A calm and gentle soul. A family man. A hero.</p>
+	</div>
+	<img src="dalmatian-square.jpg" alt="dalmatian">
+</div>
+
+<div id="footer">
+	<p>We hope you enjoyed PuppyLove!</p>
+</div>
+
+<script type="text/javascript">
+	
+	function responsiveMenu() {
+		const navUl = document.querySelector(".nav-ul");
+		if (navUl.className === "nav-ul") {
+			navUl.className += " responsive";
+		} else {
+			navUl.className = "nav-ul";
+		}
+	}
+
+</script>
+
+
+
+</body>
+</html>
